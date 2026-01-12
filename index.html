@@ -444,6 +444,7 @@
         const { createApp, ref, reactive, onMounted } = Vue;
 
         const API_BASE = 'https://unmotionable-erick-nonhyperbolically.ngrok-free.dev/';
+        axios.defaults.headers.common['ngrok-skip-browser-warning'] = 'true';
 
         createApp({
             setup() {
